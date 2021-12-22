@@ -1,0 +1,50 @@
+.container{
+    margin: 20px;
+    padding: 20px;
+    box-sizing: content-box;
+    width: fit-content;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+mat-card{
+    margin-top: 20px;
+}
+.card{
+    display:grid;
+    grid-template-rows: 1fr auto;
+}
+.edit-icon{
+    margin-left: 360px;
+}
+
+.table{
+    display:grid;
+    grid-template-columns: 1fr  auto 1fr;
+    width: fit-content;
+}
+.table .border{
+    border-left: 5px solid black;
+    height: 100px;
+}
+.table .left-header, .right-header{
+    line-height: 40px;
+}
+.right-header .cell-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+}
+.left-header{
+    margin-left: 15px;
+}
+.right-header{
+    margin-left: 15px;
+}
+.cell{
+    font-weight: bold;
+}
+.header4{
+    margin-top: 80px;
+}

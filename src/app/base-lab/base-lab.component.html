@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button  >
+        <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+      </button>
+      <span class="title">HUMIDITY METER</span>
+    </mat-toolbar-row>
+    
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav  mode="side">
+      <mat-nav-list>
+      
+        <a mat-list-item routerLinkActive="active" routerLink="base/dashboard" role="listitem">Dashboard</a>
+        <a mat-list-item routerLinkActive="active" routerLink="base/chart" role="listitem">Chart</a>
+        <a mat-list-item routerLinkActive="active" routerLink="base/lab" role="listitem">Lab</a>
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content">
+        <router-outlet></router-outlet>
+       </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  

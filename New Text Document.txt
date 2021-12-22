@@ -1,0 +1,16 @@
+  <div class="right-header" >
+                    <div *ngIf='isEditable' class="cell">{{lab.name}}</div>
+                    <div *ngIf='isEditable' class="cell">{{lab.boardname}}</div>
+                    <div class="cell-inner">
+                        <div class="cell">High</div>
+                        <div class="cell">Low</div>
+                        <div *ngIf='isEditable' class="cell-first">{{lab.humid.high}}g.kg-1</div>
+                        <div *ngIf='isEditable' class="cell-second">{{lab.humid.low}}g.kg-1</div>
+                    </div>
+                    <div class="cell-inner">
+                        <div class="cell">High</div>
+                        <div class="cell">Low</div>
+                        <div *ngIf='isEditable' class="cell-first">{{lab.temp.high}}°C</div>
+                        <div *ngIf='isEditable' class="cell-first">{{lab.temp.low}}°C</div>
+                    </div>
+                </div>

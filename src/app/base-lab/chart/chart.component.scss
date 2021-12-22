@@ -1,0 +1,11 @@
+.chart-temp{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
+    .temp{
+        display: grid;
+        grid-column: auto;
+        height: 250px;
+    }
+}

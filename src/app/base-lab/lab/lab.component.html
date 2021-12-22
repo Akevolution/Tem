@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>LABS</h2>
+    <mat-card class="card" *ngFor='let lab of labData' class="mat-elevation-z8">
+        <div class="edit-icon">
+            <button mat-icon-button class="btn-edit" (click)="editLab()">
+                <mat-icon>edit</mat-icon>
+            </button>
+        </div>
+        <div class="table">
+            <div class="left-header">
+                <div class="header1">Name</div>
+                <div class="header2">Board Name</div>
+                <div class="header3">Humidity Limit</div>
+                <div class="header4">Temperature Limit</div>
+            </div>
+            <ng-container>
+                <div class="right-header">
+                    <div class="cell">{{lab.name}}</div>
+                    <div class="cell">{{lab.boardname}}</div>
+                    <div class="cell-inner">
+                        <div class="cell">High</div>
+                        <div class="cell">Low</div>
+                        <div class="cell-first">{{lab.humid.high}}g.kg-1</div>
+                        <div class="cell-second">{{lab.humid.low}}g.kg-1</div>
+                    </div>
+                    <div class="cell-inner">
+                        <div class="cell">High</div>
+                        <div class="cell">Low</div>
+                        <div class="cell-first">{{lab.temp.high}}°C</div>
+                        <div class="cell-first">{{lab.temp.low}}°C</div>
+                    </div>
+                </div>
+                    
+            </ng-container>
+        </div>
+    </mat-card>
+</div>

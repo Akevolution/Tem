@@ -1,0 +1,42 @@
+<div class="dashboard">
+    <span class="title">Dashboard</span>
+    <div class="container">
+
+        <div class="widget-temp"  >
+            <mat-card class="widget" >
+                Temperature
+                <span>45°C</span>
+            </mat-card>
+        </div>
+        <div class="time">
+            <p>{{currentDate | date:'dd MMM yyyy h:mm:ss a '}}</p>
+        </div>
+        <div class="widget-humid">
+            <mat-card class="widget">
+                Humidity
+                <span>25g.kg-1</span>
+            </mat-card>
+        </div>
+        <div class="report">
+            <button mat-raised-button type="button" color="warn" (click)="onClick()">Reports</button>
+        </div>
+    </div>
+
+    <div class="chart-temp">
+        <div>
+            <mat-card class="temp">
+                TEMPERATURE
+                    <app-chart></app-chart>
+            </mat-card>
+
+        </div>
+    </div>
+    <div class="chart-humid">
+        <div>
+            <mat-card class="humid">
+                HUMIDITY  
+                <div #graph></div>
+            </mat-card>
+        </div>
+    </div>
+</div>
